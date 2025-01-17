@@ -1,39 +1,46 @@
 ---
 const message = "Astro is awesome!"; // Javascript variable shared
-const url = Astro.url
-const defaultVis = "data.json"
+const url = Astro.url;
+const defaultVis = "CNOT";
+const available = ["CNOT", "random1", "random2", "random3", "random4"];
 ---
 
 <astro-select data-message={[url, defaultVis]} class="z-[100]">
-  <div class="uppercase fixed bottom-10 mx-auto bg-white border border-pink-500 px-2">
-    <p class="m-0 text-center text-black">Available visualisations</p>
-    <ul
-      id="selector"
-      class="flex gap-1 list-none m-0"
-    >
-      <li class="available border border-dashed border-black px-2 my-1 text-sm bg-slate-300">data</li>
-      <li class="available border border-dashed border-black px-2 my-1 text-sm bg-slate-300">random1</li>
-      <li class="available border border-dashed border-black px-2 my-1 text-sm bg-slate-300">random2</li>
-      <li class="available border border-dashed border-black px-2 my-1 text-sm bg-slate-300">random3</li>
+  <div
+    class="uppercase fixed bottom-10 mx-auto bg-white border border-pink-500 px-2"
+  >
+    <p class="m-0 text-center text-black">Select visuals</p>
+    <ul id="selector" class="flex gap-1 list-none m-0">
+      {
+        available.map((g) => (
+          <li class="available border border-dashed border-black px-2 my-1 text-sm bg-slate-300">
+            {g}
+          </li>
+        ))
+      }
     </ul>
   </div>
 </astro-select>
 
+
 <script>
   const current = location.href.split("/").slice(-1)[0];
-  import init, {dispose} from "../scripts/animation.js";
+  import init from "../scripts/animation.js";
 
+  // This class is needed to be able to pass variables from the top
   class AstroSelect extends HTMLElement {
+
     connectedCallback() {
 
       // Extract URL querystrings
-      let url, defaultVis
-      [url, defaultVis] = this.dataset.message?.split(",") || ["", ""]
+      let url, defaultVis;
+      [url, defaultVis] = this.dataset.message?.split(",") || ["", ""];
       const urlSearchParams = new URLSearchParams(window.location.search);
       const params = Object.fromEntries(urlSearchParams.entries());
+      
       // Choose visualisation based on URL querystrings
       if (current == "") {
-        init(defaultVis)
+        init(`${defaultVis}.json`);
       } else {
         init(`${params["id"]}.json`);
       }
@@ -43,8 +50,8 @@ const defaultVis = "data.json"
       const items = this.getElementsByClassName("available");
       for (let i of items) {
         i.addEventListener("click", () => {
-          const text = `${i.textContent}`;
-          location.replace(`${url}?id=${text}`);
+          const text = (`${i.textContent}`).trim();
+          location.replace((`${url}?id=${text}`));
         });
       }
     }

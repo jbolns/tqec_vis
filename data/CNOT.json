@@ -1,0 +1,134 @@
+{
+    "wire_vertices": {
+        "b0": {
+            "annotation": {
+                "boundary": true,
+                "coord": {
+                    "position_x": 1,
+                    "position_y": 0,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                },
+                "input": 0
+            }
+        },
+        "b1": {
+            "annotation": {
+                "boundary": true,
+                "coord": {
+                    "position_x": 3,
+                    "position_y": 0,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                },
+                "input": 1
+            }
+        },
+        "b2": {
+            "annotation": {
+                "boundary": true,
+                "coord": {
+                    "position_x": 1,
+                    "position_y": 4,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                },
+                "output": 0
+            }
+        },
+        "b3": {
+            "annotation": {
+                "boundary": true,
+                "coord": {
+                    "position_x": 3,
+                    "position_y": 4,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                },
+                "output": 1
+            }
+        }
+    },
+    "node_vertices": {
+        "v0": {
+            "annotation": {
+                "coord": {
+                    "position_x": 3,
+                    "position_y": 2,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                }
+            },
+            "data": {
+                "type": "X"
+            }
+        },
+        "v1": {
+            "annotation": {
+                "coord": {
+                    "position_x": 1,
+                    "position_y": 2,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                }
+            },
+            "data": {
+                "type": "Z"
+            }
+        }
+    },
+    "undir_edges": {
+        "e0": {
+            "src": "b0",
+            "tgt": "v1"
+        },
+        "e1": {
+            "src": "b1",
+            "tgt": "v0"
+        },
+        "e2": {
+            "src": "v0",
+            "tgt": "v1"
+        },
+        "e3": {
+            "src": "v0",
+            "tgt": "b3"
+        },
+        "e4": {
+            "src": "v1",
+            "tgt": "b2"
+        }
+    },
+    "variable_types": {},
+    "scalar": "{\"power2\": 1, \"phase\": \"0\"}"
+}
