@@ -1,0 +1,57 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  section {
+		margin: 1em auto;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+	}
+
+  h1 {
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+	p {
+    color: #4b5563;
+    line-height: 1.7em;
+    margin-bottom: 0.5em;
+	}
+
+  main a {
+    color: blue;
+    text-decoration: underline;
+  }
+
+	main ul, ol {
+		margin-left: 2.5em;
+	}
+
+	main ul {
+		list-style-type: circle;
+	}
+	
+	main ol {
+		list-style-type: decimal;
+	}
+  
+  code {
+    display: inline-block;
+    background:
+      linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
+      linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+    border: 1px solid transparent;
+    padding: 6px 8px;
+  }
+
+}
