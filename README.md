@@ -1,5 +1,5 @@
 # ⚛️ Tentative TQEC visualiser
-This is a preliminary concept for a JS-based environment to visualise and edit structures. The initial focus is to automatically generate 3D structures directly from PyZX data as close to correctness as possible. Subsequent steps would need to look into enable manual editing to enable human correction. The output layer has not yet been considered.
+This is a preliminary concept for a JS-based environment to automatically generate 3D structures directly from PyZX data as close to correctness as possible. Subsequent steps would need to look into enable manual editing to enable human correction. The output layer has not yet been considered.
 
 ## 🚀 Launch
 To jump straight into taking a look at the current progress, just:
