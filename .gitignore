@@ -1,3 +1,7 @@
+# Admin files & folders that may accidentally escape
+.admin/build_files
+.vscode/
+
 # build output
 dist/
 
