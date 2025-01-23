@@ -39,7 +39,7 @@
                 "boundary": true,
                 "coord": {
                     "position_x": 1,
-                    "position_y": 8,
+                    "position_y": 6,
                     "position_z": 0,
                     "rotation_x": 0,
                     "rotation_y": 0,
@@ -56,7 +56,7 @@
                 "boundary": true,
                 "coord": {
                     "position_x": 3,
-                    "position_y": 8,
+                    "position_y": 6,
                     "position_z": 0,
                     "rotation_x": 0,
                     "rotation_y": 0,
@@ -86,48 +86,10 @@
             },
             "data": {
                 "type": "Z",
-                "value": "\u03c0/2"
+                "value": "\u03c0"
             }
         },
         "v1": {
-            "annotation": {
-                "coord": {
-                    "position_x": 3,
-                    "position_y": 4,
-                    "position_z": 0,
-                    "rotation_x": 0,
-                    "rotation_y": 0,
-                    "rotation_z": 0,
-                    "scale_x": 1,
-                    "scale_y": 1,
-                    "scale_z": 1
-                }
-            },
-            "data": {
-                "type": "Z",
-                "value": "\u03c0/4"
-            }
-        },
-        "v2": {
-            "annotation": {
-                "coord": {
-                    "position_x": 3,
-                    "position_y": 6,
-                    "position_z": 0,
-                    "rotation_x": 0,
-                    "rotation_y": 0,
-                    "rotation_z": 0,
-                    "scale_x": 1,
-                    "scale_y": 1,
-                    "scale_z": 1
-                }
-            },
-            "data": {
-                "type": "Z",
-                "value": "\u03c0/2"
-            }
-        },
-        "v3": {
             "annotation": {
                 "coord": {
                     "position_x": 1,
@@ -143,14 +105,33 @@
             },
             "data": {
                 "type": "Z",
-                "value": "3\u03c0/2"
+                "value": "\u03c0/2"
             }
         },
-        "v4": {
+        "v2": {
+            "annotation": {
+                "coord": {
+                    "position_x": 3,
+                    "position_y": 4,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                }
+            },
+            "data": {
+                "type": "Z",
+                "value": "3\u03c0/4"
+            }
+        },
+        "v3": {
             "annotation": {
                 "coord": {
                     "position_x": 1,
-                    "position_y": 6,
+                    "position_y": 4,
                     "position_z": 0,
                     "rotation_x": 0,
                     "rotation_y": 0,
@@ -164,10 +145,29 @@
                 "type": "Z"
             }
         },
-        "v5": {
+        "v4": {
             "annotation": {
                 "coord": {
                     "position_x": 1,
+                    "position_y": 1,
+                    "position_z": 0,
+                    "rotation_x": 0,
+                    "rotation_y": 0,
+                    "rotation_z": 0,
+                    "scale_x": 1,
+                    "scale_y": 1,
+                    "scale_z": 1
+                }
+            },
+            "data": {
+                "type": "hadamard",
+                "is_edge": "true"
+            }
+        },
+        "v5": {
+            "annotation": {
+                "coord": {
+                    "position_x": 3,
                     "position_y": 1,
                     "position_z": 0,
                     "rotation_x": 0,
@@ -187,7 +187,7 @@
             "annotation": {
                 "coord": {
                     "position_x": 3,
-                    "position_y": 1,
+                    "position_y": 3,
                     "position_z": 0,
                     "rotation_x": 0,
                     "rotation_y": 0,
@@ -205,103 +205,8 @@
         "v7": {
             "annotation": {
                 "coord": {
-                    "position_x": 3,
+                    "position_x": 1,
                     "position_y": 3,
-                    "position_z": 0,
-                    "rotation_x": 0,
-                    "rotation_y": 0,
-                    "rotation_z": 0,
-                    "scale_x": 1,
-                    "scale_y": 1,
-                    "scale_z": 1
-                }
-            },
-            "data": {
-                "type": "hadamard",
-                "is_edge": "true"
-            }
-        },
-        "v8": {
-            "annotation": {
-                "coord": {
-                    "position_x": 3,
-                    "position_y": 5,
-                    "position_z": 0,
-                    "rotation_x": 0,
-                    "rotation_y": 0,
-                    "rotation_z": 0,
-                    "scale_x": 1,
-                    "scale_y": 1,
-                    "scale_z": 1
-                }
-            },
-            "data": {
-                "type": "hadamard",
-                "is_edge": "true"
-            }
-        },
-        "v9": {
-            "annotation": {
-                "coord": {
-                    "position_x": 2,
-                    "position_y": 4,
-                    "position_z": -2,
-                    "rotation_x": 0,
-                    "rotation_y": 0,
-                    "rotation_z": 0,
-                    "scale_x": 1,
-                    "scale_y": 1,
-                    "scale_z": 1
-                }
-            },
-            "data": {
-                "type": "hadamard",
-                "is_edge": "true"
-            }
-        },
-        "v10": {
-            "annotation": {
-                "coord": {
-                    "position_x": 3,
-                    "position_y": 7,
-                    "position_z": 0,
-                    "rotation_x": 0,
-                    "rotation_y": 0,
-                    "rotation_z": 0,
-                    "scale_x": 1,
-                    "scale_y": 1,
-                    "scale_z": 1
-                }
-            },
-            "data": {
-                "type": "hadamard",
-                "is_edge": "true"
-            }
-        },
-        "v11": {
-            "annotation": {
-                "coord": {
-                    "position_x": 1,
-                    "position_y": 4,
-                    "position_z": 0,
-                    "rotation_x": 0,
-                    "rotation_y": 0,
-                    "rotation_z": 0,
-                    "scale_x": 1,
-                    "scale_y": 1,
-                    "scale_z": 1
-                }
-            },
-            "data": {
-                "type": "hadamard",
-                "is_edge": "true"
-            }
-        },
-        "v12": {
-            "annotation": {
-                "coord": {
-                    "position_x": 1,
-                    "position_y": 7,
                     "position_z": 0,
                     "rotation_x": 0,
                     "rotation_y": 0,
@@ -320,69 +225,45 @@
     "undir_edges": {
         "e0": {
             "src": "b0",
-            "tgt": "v5"
+            "tgt": "v4"
         },
         "e1": {
-            "src": "v3",
-            "tgt": "v5"
+            "src": "v1",
+            "tgt": "v4"
         },
         "e2": {
             "src": "b1",
-            "tgt": "v6"
+            "tgt": "v5"
         },
         "e3": {
             "src": "v0",
-            "tgt": "v6"
+            "tgt": "v5"
         },
         "e4": {
             "src": "v0",
-            "tgt": "v7"
+            "tgt": "v6"
         },
         "e5": {
-            "src": "v1",
-            "tgt": "v7"
+            "src": "v2",
+            "tgt": "v6"
         },
         "e6": {
             "src": "v1",
-            "tgt": "v8"
+            "tgt": "v7"
         },
         "e7": {
-            "src": "v2",
-            "tgt": "v8"
+            "src": "v3",
+            "tgt": "v7"
         },
         "e8": {
             "src": "v2",
-            "tgt": "v9"
+            "tgt": "b3"
         },
         "e9": {
-            "src": "v3",
-            "tgt": "v9"
-        },
-        "e10": {
-            "src": "v2",
-            "tgt": "v10"
-        },
-        "e11": {
-            "src": "b3",
-            "tgt": "v10"
-        },
-        "e12": {
-            "src": "v3",
-            "tgt": "v11"
-        },
-        "e13": {
-            "src": "v4",
-            "tgt": "v11"
-        },
-        "e14": {
             "src": "b2",
-            "tgt": "v12"
-        },
-        "e15": {
-            "src": "v4",
-            "tgt": "v12"
+            "tgt": "v3"
         }
     },
     "variable_types": {},
-    "scalar": "{\"power2\": 1, \"phase\": \"1/4\"}"
+    "scalar": "{\"power2\": 0, \"phase\": \"0\"}"
 }

@@ -54,4 +54,36 @@
     padding: 6px 8px;
   }
 
+  .dg .main {
+    font-variant: small-caps;
+  }
+
+  .dg.main .close-button {
+    display: none;
+  }
+
+  #pop-menu {
+    position: relative;
+    margin: 10%;  
+    background: #1a1a1a;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    text-transform: capitalize;
+    font-variant: small-caps;
+  }
+
+  #pop-menu p {
+    color: white;
+  }
+
+  #pop-menu li {
+    margin: 3px;
+    border: 1px solid #2fa1d6;
+  }
+
+  #pop-ul li:hover {
+    background: whitesmoke;
+  }
+
 }
