@@ -1,11 +1,13 @@
-# ⚛️ Tentative TQEC visualiser
-This is a preliminary concept for a JS-based environment to automatically generate 3D structures directly from PyZX data as close to correctness as possible. Subsequent steps would need to look into enable manual editing to enable human correction. The output layer has not yet been considered.
+# ⚛️ Tentative 3D ZX visualiser
+This is a preliminary concept for a JS-based environment to automatically generate 3D structures directly from PyZX data as close to correctness as possible, edit them, and export them to an useful (but yet to be determined format).
+
+Current status: A lot of things work, but controls are very unintuitive.
 
 ## 🚀 Launch
 To jump straight into taking a look at the current progress, just:
 - Clone, download, or otherwise get the repository into your local computer:
 ```sh
-git clone https://github.com/tqec/tqec_vis.git
+git clone https://github.com/jbolns/pyzx_vis.git
 ```
 - Install all necessary dependencies
 ```sh
